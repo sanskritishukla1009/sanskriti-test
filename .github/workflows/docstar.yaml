@@ -78,7 +78,7 @@ jobs:
           echo "$FILES_JSON"
     
           RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" -X POST https://dev-api.docstar.io/import/github \
-            -H "Authorization: Bearer $DOCSTAR_API_KEY" \
+            -H "Authorization: Bearer hm_a86b389ce71e3e7707eeae70de5a7b708be5e8ea042962fe2ba16531c1ea9c79" \
             -H "Content-Type: application/json" \
             -d "{
                       \"repository\": \"${{ github.repository }}\",
